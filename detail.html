@@ -1,0 +1,18 @@
+<div>
+	<strong>Assunto:</strong>
+	{{msg.assunto}}
+</div>
+<div>
+	<strong>Remetente:</strong> 
+	{{msg.remetente}}
+</div>
+<div>
+	<strong>Data:</strong> 
+	{{msg.data}}</div>
+<div>
+
+<strong>Para:</strong>
+	<span ng-repeat='recipient in msg.recipients'>{{recipient}} </span>
+	<div>{{msg.message}}</div>
+
+	<a href='#/'>Voltar para a lista de mensagens</a>

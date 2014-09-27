@@ -1,0 +1,12 @@
+<table>
+	<tr>
+	  <td><strong>Remetente</strong></td>
+	  <td><strong>Assunto</strong></td>
+	  <td><strong>Data</strong></td>
+	</tr>
+	<tr ng-repeat='msg in mensagens'>
+	  <td>{{msg.remetente}}</td>
+	  <td><a href='#/view/{{msg.id}}'>{{msg.assunto}}</td>
+	  <td>{{msg.data}}</td>
+	</tr>
+</table>
